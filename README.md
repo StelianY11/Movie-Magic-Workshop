@@ -7,3 +7,4 @@ JS Back-End Workshop SoftUni
  3. Setup handlebars
  4. Add resources
  5. Setup static routes
+ 6. Add routes and controllers
