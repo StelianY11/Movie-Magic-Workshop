@@ -33,6 +33,16 @@
       "rating": 7.1,
       "description": "An alien child is evacuated from his dying world and sent to Earth to live among humans. His peace is threatened when other survivors of his home planet invade Earth.",
       "id": "2ctvvwakm1nih0dp"
+    },
+    {
+      "title": "The Matrix",
+      "genre": "Action/Sci-fi",
+      "director": "Lilly Wachowski",
+      "year": "1999",
+      "imageUrl": "https://m.media-amazon.com/images/I/613ypTLZHsL._AC_UF1000,1000_QL80_.jpg",
+      "rating": 10,
+      "description": "When a beautiful stranger leads computer hacker Neo to a forbidding underworld, he discovers the shocking truth--the life he knows is the elaborate deception of an evil cyber-intelligence.",
+      "id": "2ctvvr4gm1njhp1x"
     }
   ]
 }
