@@ -15,4 +15,11 @@ router.post('/create', async (req, res) => {
     res.redirect('/');
 });
 
+router.get('/:movieId/details', async (req, res) => {
+    const movieId = req.params.movieId;
+    const movie = await movieService.getOne(movieId);
+
+    res.render('movies/details', { movie } );
+});
+
 export default router;
