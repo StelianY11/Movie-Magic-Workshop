@@ -2,7 +2,7 @@
   "movies": [
     {
       "id": "3ctvvwakm7nih0ds",
-      "name": "Jungle Cruise",
+      "title": "Jungle Cruise",
       "imageUrl": "/img/jungle-cruise.jpeg",
       "genre": "Adventure",
       "rating": 7,
@@ -10,7 +10,7 @@
     },
     {
       "id": "2ctvvwakm1nih3ds",
-      "name": "The Little Mermaid",
+      "title": "The Little Mermaid",
       "imageUrl": "/img/the-little-mermaid.jpg",
       "genre": "Fantasy",
       "rating": 3,
@@ -18,7 +18,7 @@
     },
     {
       "id": "1ctvvwakm1nih0ds",
-      "name": "Home Alone",
+      "title": "Home Alone",
       "imageUrl": "/img/home-alone.jpeg",
       "genre": "Comedy",
       "rating": 1,
