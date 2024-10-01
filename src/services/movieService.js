@@ -1,7 +1,7 @@
 import Movie from "../models/movie.js";
 
-const getAll = async (filter = {}) => {
-    let movies = await Movie.find();
+const getAll = (filter = {}) => {
+    let movies = Movie.find();
 
     if(filter.search) {
         movies = movies.filter(m => m.title.toLowerCase().includes(filter.search.toLowerCase()));
@@ -21,7 +21,7 @@ const getAll = async (filter = {}) => {
 const create = (movie) =>  Movie.create(movie);
 
 
-const getOne = async (movieId) => Movie.findById(movieId);
+const getOne = (movieId) => Movie.findById(movieId);
  
 export default {
     getAll,

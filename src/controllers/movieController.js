@@ -18,7 +18,7 @@ router.post('/create', async (req, res) => {
 router.get('/search', async (req, res) => {
     const filter = req.query;
     
-    const movies = await movieService.getAll(filter);
+    const movies = await movieService.getAll(filter).lean();
 
 
     res.render('home', { isSearch: true, movies, filter });
@@ -26,7 +26,7 @@ router.get('/search', async (req, res) => {
 
 router.get('/:movieId/details', async (req, res) => {
     const movieId = req.params.movieId;
-    const movie = await movieService.getOne(movieId);
+    const movie = await movieService.getOne(movieId).lean();
 
     movie.ratingView = getRatingViewData(movie.rating);
 

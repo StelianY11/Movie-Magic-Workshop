@@ -7,9 +7,9 @@ import mongooseInit from './config/mongooseInit.js';
 
 const app = express();
 
-mongooseInit();
 handlebarsInit(app);
 expressInit(app);
+mongooseInit();
 
 app.use(routes);
 
