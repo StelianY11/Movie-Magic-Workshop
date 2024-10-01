@@ -33,6 +33,10 @@ router.get('/:movieId/details', async (req, res) => {
     res.render('movies/details', { movie } );
 });
 
+router.get('/cast-create', (req, res) => {
+    res.render('movies/cast-create');
+});
+
 function getRatingViewData(rating){
     if(!Number.isInteger(rating)){
         return 'n\\a';
