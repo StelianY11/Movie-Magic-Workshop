@@ -28,12 +28,15 @@ const movieSchema = new Schema({
     description: {
         type: String,
         required: true,
-        maxLength: 255,
+        maxLength: 2550,
     },
     imageUrl: String,
     casts: [{
-        type: Types.ObjectId,
-        ref: "Cast",
+        character: String,
+        cast: {
+            type: Types.ObjectId,
+            ref: "Cast",
+        },
     }],
 });
 

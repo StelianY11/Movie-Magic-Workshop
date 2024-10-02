@@ -24,6 +24,8 @@ JS Back-End Workshop SoftUni
  6. Create Cast page
  7. Add attach cast page
  8. Show cast in movie detail page
- Bonus:
+
+## Bonus:
  - Rating helper
- - 
+ - Fix filter for movie(converted from local storage to mongoose storage)
+ - Filter casts based on added ones
