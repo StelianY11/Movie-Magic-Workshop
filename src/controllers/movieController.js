@@ -17,7 +17,7 @@ router.post('/create', async (req, res) => {
 
 router.get('/search', async (req, res) => {
     const filter = req.query;
-    
+
     const movies = await movieService.getAll(filter).lean();
 
 
@@ -30,15 +30,17 @@ router.get('/:movieId/details', async (req, res) => {
 
     movie.ratingView = getRatingViewData(movie.rating);
 
-    res.render('movies/details', { movie } );
+    res.render('movies/details', { movie });
 });
 
-router.get('/:movieId/attach', (req, res) => {
-    res.render('movies/attach')
+router.get('/:movieId/attach', async (req, res) => {
+    const movie = await movieService.getOne(req.params.movieId).lean();
+
+    res.render('movies/attach', { movie })
 });
 
-function getRatingViewData(rating){
-    if(!Number.isInteger(rating)){
+function getRatingViewData(rating) {
+    if (!Number.isInteger(rating)) {
         return 'n\\a';
     }
 
