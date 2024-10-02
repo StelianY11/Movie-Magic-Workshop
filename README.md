@@ -25,5 +25,5 @@ JS Back-End Workshop SoftUni
  7. Add attach cast page
  8. Show cast in movie detail page
  Bonus:
- - 
+ - Rating helper
  - 
