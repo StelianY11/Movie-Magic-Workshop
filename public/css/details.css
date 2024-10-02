@@ -114,7 +114,7 @@
 }
 
 .attach{
-    position: absolute;
+    display: inline-block;
     color: #fff;
     border: none;
     padding: 15px;
@@ -243,6 +243,40 @@ span {
     margin-left: 2em;
     margin-bottom: 25px;
 }
+.main-cast-card {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  
+  .cast-card {
+    width: 300px;
+    background-color: #6d6875;
+    border-radius: 10%;
+    color: white;
+  }
+  
+  .cast-info {
+    margin: 20px;
+    font-weight: bold;
+  }
+  
+  .cast-info h1 {
+    text-align: center;
+  }
+  
+  .cast-info h3 {
+    margin-top: 5px;
+  }
+  
+  .card-img img {
+    display: inline;
+    border-radius: 10%;
+    margin-left: 26%;
+    margin-top: 10px;
+    width: 150px;
+    height: 150px;
+  }
+  
 
 .PV {
     color: black;
