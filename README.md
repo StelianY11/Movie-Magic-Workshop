@@ -22,3 +22,4 @@ JS Back-End Workshop SoftUni
  4. Convert file based storage to mongoose
  5. Add Cast model
  6. Create Cast page
+ 7. Add attach cast page

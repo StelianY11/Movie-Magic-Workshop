@@ -12,7 +12,7 @@ router.post('/create', async (req, res) => {
 
     await castService.create(cast);
 
-    res.redirect("");
+    res.redirect("/");
 });
 
 export default router;

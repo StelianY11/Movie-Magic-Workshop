@@ -113,6 +113,21 @@
     transition: 200ms ease-in-out;
 }
 
+.attach{
+    position: absolute;
+    color: #fff;
+    border: none;
+    padding: 15px;
+    outline: none;
+    font-size: 18px;
+    margin-top: 11px;
+    margin-left: 183px;
+    background: #B5838D;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    transition: 200ms ease-in-out;
+}
+
 .del-btn {
     background-color: #C6AC8F;
 }
