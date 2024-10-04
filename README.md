@@ -29,3 +29,16 @@ JS Back-End Workshop SoftUni
  - Rating helper
  - Fix filter for movie(converted from local storage to mongoose storage)
  - Filter casts based on added ones
+
+## Developing Steps -Workshop 3
+ 1. Add register page
+    - Add user model
+    - Add auth controller
+    - Add auth service  
+ 2. Add login page 
+ 3. Add dynamic navigation
+
+## Bonus:
+- Automatic login for registered users
+
+## Developing Steps -Workshop 3

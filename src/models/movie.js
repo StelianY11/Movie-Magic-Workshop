@@ -28,7 +28,6 @@ const movieSchema = new Schema({
     description: {
         type: String,
         required: true,
-        maxLength: 2550,
     },
     imageUrl: String,
     casts: [{
