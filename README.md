@@ -37,6 +37,9 @@ JS Back-End Workshop SoftUni
     - Add auth service  
     - Add hash password before save
  2. Add login page 
+    - Validate hashed password
+    - Create jwt token
+    - Add token to cookie
  3. Add dynamic navigation
 
 ## Bonus:
