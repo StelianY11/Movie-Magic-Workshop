@@ -35,12 +35,13 @@ JS Back-End Workshop SoftUni
     - Add user model
     - Add auth controller
     - Add auth service  
-    - Add hash password before save
+    - Add hash password before save `npm i bcrypt`
  2. Add login page 
     - Validate hashed password
-    - Create jwt token
-    - Add token to cookie
- 3. Add dynamic navigation
+    - Create jwt token `npm i jsonwebtoken`
+    - Add token to cookie `npm i cookie-parser`
+ 3. Add authorization
+ 4. Add dynamic navigation
 
 ## Bonus:
 - Automatic login for registered users
