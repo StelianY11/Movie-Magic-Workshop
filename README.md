@@ -35,6 +35,7 @@ JS Back-End Workshop SoftUni
     - Add user model
     - Add auth controller
     - Add auth service  
+    - Add hash password before save
  2. Add login page 
  3. Add dynamic navigation
 
