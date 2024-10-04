@@ -44,5 +44,6 @@ JS Back-End Workshop SoftUni
 
 ## Bonus:
 - Automatic login for registered users
+- Make jwt library asynchronously
 
 ## Developing Steps -Workshop 3
