@@ -17,22 +17,15 @@ input[type="number"]::-webkit-outer-spin-button {
   margin: 0;
 }
 
-.attachCastSection>h1 {
+.attachCastSection > h1 {
   font-weight: bold;
   font-size: 30px;
-  margin-bottom: 3px;
+  margin-bottom: 0.8em;
 }
 
 .attach-form img {
-  margin-top: 2px;
-  width: 35%;
-}
-
-#cast-field {
-  display: flex;
-  padding: 10px;
-  width: 60%;
-  margin: 0px 0px 0px 140px;
+  margin-top: 20px;
+  width: 40%;
 }
 
 #attach-btn {
@@ -58,23 +51,23 @@ input[type="number"]::-webkit-outer-spin-button {
   border-right: 5px solid black;
 }
 
-.info-cast>h2 {
+.info-cast > h2 {
   padding-top: 10em;
   font-weight: bold;
   font-size: 23px;
 }
 
 #cast {
-  margin-top: 12px;
-  width: 50%;
+    margin-top: 30px;
+    width: 50%;
 }
 
 .attach-form label {
-  font-weight: bold;
-  font-size: 24px;
-  color: black;
+    font-weight: bold;
+    font-size: 24px;
+    color: black;
 }
 
-.attach-form option select {
-  font-weight: bold;
+.attach-form option select{
+    font-weight: bold;
 }

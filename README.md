@@ -41,6 +41,7 @@ JS Back-End Workshop SoftUni
     - Create jwt token `npm i jsonwebtoken`
     - Add token to cookie `npm i cookie-parser`
  3. Add authorization
+ 4. Add owner control buttons in details page
  4. Add dynamic navigation
 
 ## Bonus:
