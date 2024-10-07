@@ -47,8 +47,10 @@ JS Back-End Workshop SoftUni
  7. Edit movie
  8. Add dynamic navigation
  9. Logout
+ 10. Add route guard
 
 ## Bonus:
+- Show email for logged in users
 - Automatic login for registered users
 - Make jwt library asynchronously
 
