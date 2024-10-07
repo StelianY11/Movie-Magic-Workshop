@@ -46,6 +46,7 @@ JS Back-End Workshop SoftUni
  6. Delete movie
  7. Edit movie
  8. Add dynamic navigation
+ 9. Logout
 
 ## Bonus:
 - Automatic login for registered users
