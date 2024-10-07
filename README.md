@@ -41,8 +41,11 @@ JS Back-End Workshop SoftUni
     - Create jwt token `npm i jsonwebtoken`
     - Add token to cookie `npm i cookie-parser`
  3. Add authorization
- 4. Add owner control buttons in details page
- 4. Add dynamic navigation
+ 4. Add owner relation to movie
+ 5. Add owner control buttons in details page
+ 6. Delete movie
+ 7. Edit movie
+ 8. Add dynamic navigation
 
 ## Bonus:
 - Automatic login for registered users
