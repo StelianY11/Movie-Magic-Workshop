@@ -36,9 +36,12 @@ const attach = (movieId, castId, character) => {
     return Movie.findByIdAndUpdate(movieId, { $push: { casts: { cast: castId, character } } })
 }
 
+const remove = (movieId) => Movie.findByIdAndDelete(movieId);
+
 export default {
     getAll,
     create,
     getOne,
     attach,
+    remove,
 }
