@@ -9,11 +9,20 @@ const userSchema = new Schema({
         type: String,
         unique: true,
         minLength: [10, "Email is too short."],
+        validate: [/@[A-Za-z0-9]+.[A-Za-z0-9]+$/, "Invalid email address!"]
     },
     password: {
         type: String,
-        minLength: [3, "Your password is too short"],
+        minLength: [6, "Your password is too short"],
+        validate: [/^[A-Za-z0-9]+$/, "Invalid password characters!"]
     },
+})
+
+//Virtual property for password validation
+userSchema.virtual('rePassword', function(value){
+    if(value !== this.password){
+        throw new Error("Password does`t match!")
+    }
 })
 
 //Hashing password before save

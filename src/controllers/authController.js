@@ -12,15 +12,19 @@ router.get('/register', (req, res) => {
 router.post('/register', async (req, res) => {
     const { email, password, rePassword } = req.body;
 
-    if(!validator.isEmail(email)){
+    if (!validator.isEmail(email)) {
         return res.status(400).end();
     }
 
-    try{
-        await authService.register(email, password);
-    }catch(err){
+    // if (password !== rePassword) {
+    //     return res.status(400).end();
+    // }
+
+    try {
+        await authService.register(email, password, rePassword);
+    } catch (err) {
         console.log(err.message);
-        
+        return res.end();
     }
 
     const token = await authService.login(email, password);
