@@ -5,8 +5,15 @@ import bcrypt from "bcrypt";
 const SALT_ROUNDS = 10;
 
 const userSchema = new Schema({
-    email: String,
-    password: String,
+    email: {
+        type: String,
+        unique: true,
+        minLength: [10, "Email is too short."],
+    },
+    password: {
+        type: String,
+        minLength: [3, "Your password is too short"],
+    },
 })
 
 //Hashing password before save
