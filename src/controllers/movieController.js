@@ -3,6 +3,7 @@ import { Router } from 'express';
 import movieService from '../services/movieService.js';
 import castService from '../services/castService.js';
 import { isAuth } from '../middlewares/authMiddleware.js';
+import { getErrorMessage } from '../utils/errorUtils.js';
 
 const router = Router();
 
@@ -17,9 +18,9 @@ router.post('/create', isAuth, async (req, res) => {
     try {
         await movieService.create(movieData, ownerId);
     } catch (error) {
-        console.log(error.message);
-        
-        return res.end();
+        const errorMessage = getErrorMessage(error);
+
+        return res.render('movies/create', {error: errorMessage , movie: movieData});
     }
 
     res.redirect('/');
@@ -62,6 +63,14 @@ router.post('/:movieId/attach', isAuth, async (req, res) => {
 
 router.get('/:movieId/delete', isAuth, async (req, res) => {
     const movieId = req.params.movieId;
+
+    const movie = await movieService.getOne(movieId).lean();
+
+    if(movie.owner?.toString() !== req.user._id){
+        //return res.render("movies/details", { movie, isOwner: false});
+        res.setError("You cannot delete this movie!");
+        return res.redirect("/404");
+    }
 
     await movieService.remove(movieId);
 

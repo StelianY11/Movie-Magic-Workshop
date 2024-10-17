@@ -14,6 +14,7 @@ const castSchema = new Schema({
     },
     born: {
         type: String,
+        minLength: 10,
         validate: [/^[A-Za-z0-9 ]+$/, "Born can contain only letters, numbers!"]
     },
     imageUrl: {

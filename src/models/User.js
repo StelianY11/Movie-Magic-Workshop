@@ -19,11 +19,14 @@ const userSchema = new Schema({
 })
 
 //Virtual property for password validation
-userSchema.virtual('rePassword', function(value){
-    if(value !== this.password){
-        throw new Error("Password does`t match!")
-    }
-})
+userSchema.virtual('rePassword')
+    .set(function(value){
+
+        if(value !== this.password){
+            throw new Error("Password does`t match!")
+        }
+    });
+
 
 //Hashing password before save
 userSchema.pre('save', async function () {
